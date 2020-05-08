@@ -1143,3 +1143,151 @@ select문
 		- SQL1과 SQL2의 각각의 컬럼별 데이터타입이 동일해야한다.
 		- SQL1과 SQL2의 컬럼의 이름은 같지 않아도 상관없다.
 		- UNION, UNION ALL, INTERSECT는 SQL1과 SQL2의 순서가 달라져도 결과가 동일하다.
+
+
+고급 서브쿼리
+	- 다중 열 서브쿼리
+		* 서브쿼리가 여러 행 및 여러 열을 반환한다.
+		* select column1, column2, ...
+		  from table
+		  where (column, column) in (select column, column
+					     from table
+					     where 조건식)
+		* 연산자는 in을 사용한다.
+
+	- 스칼라 서브쿼리
+		* 스칼라 서브쿼리는 1행 1열의 값만 반환한다.
+		* 스칼라 서브쿼리를 실행하면 값 하나가 획득된다.
+		* 사용가능한 곳
+			select절, from절, where절에서 연산자의 왼쪽,
+			insert문의 values절, update문의 set절,
+			case와 decode의 조건식 및 표현식
+		* 사용 예
+			- 사원아이디, 이름, 급여, 평균급여와의 차이를 조회하기
+			select employee_id, first_name, salary,
+			       (select avg(salary) from employees) - salary gap
+			from employees;
+
+			- 부서아이디, 부서명, 해당 부서의 사원수를 조회하기
+			select outter.department_id, outter.department_name,
+       			      (select count(*)
+        		       from employees inner
+        		       where inner.department_id = outter.department_id) cnt
+			from departments outter;
+
+	- 상호관련 서브쿼리
+		* 조회된 행의 단위로 서브쿼리가 사용된다.
+		* 서브쿼리가 외부 쿼리의 모든 행에 대해서 한번씩 실행된다.
+		* select column, column, ...
+		  from table1 OUTER
+		  where column 연산자 (select column
+				       from table2 INNER
+				       where INNER.column = OUTER.column)
+		* 사용 예
+			- 소속부서의 평균급여보다 급여를 많이 받는 사원의 이름, 급여를 조회하기
+			select outter.first_name, outter.salary
+			from employees outter
+			where outter.salary > (select avg(inner.salary)
+                       			       from employees inner
+                       			       where inner.department_id = outter.department_id);
+
+			* 외부 SQL이 실행되어서 행을 가져온다.(후보행)
+			* 후보행의 행마다 department_id값을 가져와서 서브쿼리를 실행한다.
+			* 서브쿼리의 결과값을 사용해서 후보행을 검증한다.
+			* 검증을 통과한 행만 최종 결과로 출력된다.
+
+	- exists
+		* 서브쿼리 실행 결과 조회된 행이 있는지 여부를 확인하는 연산자다.
+		* 서브쿼리 실행 중 조건을 만족하는 행이 존재하면 즉시 true를 반환하고, 검색을 중단한다.
+		* 사용 예
+			- 부하직원이 있는 직원 조회하기
+			select *
+			from employees 상사
+			where exists (select 1
+              			      from employees 부하
+              			      where 부하.manager_id = 상사.employee_id);
+			* 서브쿼리에서는 값을 조회하는 것이 목적이 아니기 때문에 보통 상수값을 적는다.
+			* exists 연산자는 서브쿼리에서 행이 검색되면 true값을 반환한다.
+
+
+계층형 검색
+	* 자료트리 구조의 가지는 데이터들 사이에 존재하는 관계를 찾아서 계층을 만들고,
+	  부모->자손, 자손->부모 방향으로 데이터를 조회하는 것.
+	* select [level], column, column, ...
+	  from table
+	  [where 조건식]
+	  [start with 조건식]
+	  [connect by prior 조건식]
+	  * level : 계층 검색에서 제공하는 컬럼, 각 행에 대해서 어느 계층에 속하는지를 숫자값으로 반환
+	  * start with : 계층 검색의 시작점을 지정한다.
+		ex) start with employee_id = 100
+	  * connect by prior : 부모-자식관계에 있는 컬럼을 지정한다.
+		ex) connect by prior 부모키 = 자식키 : 위에서 아래로 검색
+		    connect by prior 자식키 = 부모키 : 아래에서 위로 검색
+
+
+절차형 SQL
+	* PL/SQL
+		- SQL도 다른 프로그래밍 언어처럼 절차지향적 프로그램을 작성할 수 있다.
+		- 특징
+			* DBMS 내부에서 실행된다.
+			* BEGIN/END의 블록구조로 프로그램을 모듈화할 수 있다.
+			* 조건문, 반복문 등을 사용해서 연속적인 SQL 작업을 수행할 수 있다.
+	* 프로시저(Procedure)
+		- 특정 작업을 수행하는 이름을 가진 PL/SQL 블록이다.
+		- 매개변수를 받을 수 있고, 재사용할 수 있는 PL/SQL 블록이다.
+		- 보통 연속적인 작업 혹은 실행단계가 복잡한 트랜잭션(SQL작업)을 수행하기 위해서 생성한다.
+
+	* 함수(Function)
+		- 프로시저와 동일하게 절차형 SQL을 활용하여 일련의 SQL 작업을 처리하고,
+		  그 처리결과를 단일값으로 반환할 수 있는 절차형 SQL이다.
+
+	* 트리거
+		- 특정 테이블에 데이터의 추가, 수정, 삭제 등의 데이터변경 이벤트가 발생하면
+		  DBMS에서 자동으로 실행되도록 구현된 프로그램을 말한다.
+
+
+프로시저
+	* 문법
+	CREATE OR REPLACE PROCEDURE 프로시저명
+		(변수명 IN 데이터타입,		
+		 변수명 OUT 데이터타입, ...)
+	IS
+		-- 변수 선언
+		변수명 데이터타입;
+		변수명 데이터타입 := 값;
+	BEGIN
+		SQL 문자, PL/SQL 제어문장
+		...
+	END
+
+	* 실행하기
+	EXECUTE 프로시저명(값, 값);
+
+
+함수
+	* 문법
+	CREATE OR REPLACE FUNCTION 함수명
+	(변수명 IN 데이터타입,
+	 변수명 IN 데이터타입, ...)
+	
+	-- 함수가 반환하는 값의 타입을 지정한다.
+	RETURN 데이터타입
+
+	IS
+		변수명 데이터타입;
+	BEGIN
+		PL/SQL 블록
+		-- 리턴문이 반드시 존재해야한다.
+		RETURN 변수;
+	END;
+
+
+트리거
+	* 문법
+	CREATE OR REPLACE TRIGGER 트리거명
+	BEFORE | AFTER 				-- BEFORE나 AFTER중 하나를 사용한다.
+	INSERT | UPDATE | DELETE ON 테이블명	-- INSERT나 UPDATE나 DELETE중 하나를 사용한다.
+	FOR EACH ROW
+		PL/SQL 구문
+	END
