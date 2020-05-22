@@ -14,7 +14,7 @@ create SEQUENCE sample_review_seq NOCACHE;
 insert into sample_book_reviews
 (review_no, review_content, review_point, book_no, user_id)
 values
-(sample_review_seq.nextval, '아주 좋은 내용이었습니다.', 5, 10019, 'hong');
+(sample_review_seq.nextval, '아주 좋은 내용이었습니다.', 5, 10023, 'hong');
 
 insert into sample_book_reviews
 (review_no, review_content, review_point, book_no, user_id)
