@@ -1,0 +1,84 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E7D2097A-9765-0914-5B96-9EA86235013D" schemaObject="E472BB77-AAC3-288F-54BC-A41AB1B71B7A" name="BR_EVENTS_IMAGE_PATH">
+<sourceConnName>semiremote</sourceConnName>
+<sourceObjSchema>BR</sourceObjSchema>
+<sourceObjName>BR_EVENTS_IMAGE_PATH</sourceObjName>
+<createdBy>JHTA</createdBy>
+<createdTime>2020-07-20 07:22:45 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<importedID>6E78AC2F-CE6B-20F0-F673-E9FA1F6B345D</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="EVENT_NO" id="E8485A50-C0CC-71FB-1703-BA7CC709FE4D">
+<sourceConnName>semiremote</sourceConnName>
+<sourceObjSchema>BR_EVENTS_IMAGE_PATH</sourceObjSchema>
+<sourceObjName>EVENT_NO</sourceObjName>
+<createdBy>JHTA</createdBy>
+<createdTime>2020-07-20 07:22:45 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<importedID>019B9B03-20EB-2B55-5DC0-9B7A0C814BA4</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,6,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FDB2A7D6-B755-CC5C-F6B4-91E5340FA7E8" referredColumn="7AA36E92-E934-447B-0F56-12CDD35933C7"/>
+</associations>
+</Column>
+<Column name="IMAGE_PATH" id="B52DC41C-A628-3846-77DF-3E535151FFBC">
+<sourceConnName>semiremote</sourceConnName>
+<sourceObjSchema>BR_EVENTS_IMAGE_PATH</sourceObjSchema>
+<sourceObjName>IMAGE_PATH</sourceObjName>
+<createdBy>JHTA</createdBy>
+<createdTime>2020-07-20 07:22:45 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<importedID>8A0C691D-C5F4-BA91-518B-4742D2AD0194</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1000 BYTE</dataTypeSize>
+<ownDataTypeParameters>1000 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IMAGE_TYPE" id="2128F322-3906-4647-02D0-76C3F18973F3">
+<sourceConnName>semiremote</sourceConnName>
+<sourceObjSchema>BR_EVENTS_IMAGE_PATH</sourceObjSchema>
+<sourceObjName>IMAGE_TYPE</sourceObjName>
+<createdBy>JHTA</createdBy>
+<createdTime>2020-07-20 07:22:45 UTC</createdTime>
+<commentInRDBMS><![CDATA['CONTENT','BANNER','THUMBNAIL']]></commentInRDBMS>
+<ownerDesignName>erd</ownerDesignName>
+<importedID>79AA1FD4-A82C-8A52-AFFC-AFF731C91EE9</importedID>
+<constraintName>BR_EVENTS_IMAGE_PATH_CHK1</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="IMAGE_TYPE = &apos;0&apos; or IMAGE_TYPE=&apos;1&apos; or IMAGE_TYPE=&apos;2&apos;"/>
+<implementationDef dbType="Oracle Database 11g" definition="IMAGE_TYPE = &apos;0&apos; or IMAGE_TYPE=&apos;1&apos; or IMAGE_TYPE=&apos;2&apos;"/>
+</checkConstraint>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="881944CB-A6E0-2ED0-E236-E83530D8091D" name="SYS_C007246">
+<createdBy>JHTA</createdBy>
+<createdTime>2020-07-20 07:22:45 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E8485A50-C0CC-71FB-1703-BA7CC709FE4D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

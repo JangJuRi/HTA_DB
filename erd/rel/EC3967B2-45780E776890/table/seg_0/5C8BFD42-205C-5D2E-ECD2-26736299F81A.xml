@@ -1,0 +1,146 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5C8BFD42-205C-5D2E-ECD2-26736299F81A" schemaObject="E472BB77-AAC3-288F-54BC-A41AB1B71B7A" name="BR_NOTICES">
+<sourceConnName>semiremote</sourceConnName>
+<sourceObjSchema>BR</sourceObjSchema>
+<sourceObjName>BR_NOTICES</sourceObjName>
+<createdBy>JHTA</createdBy>
+<createdTime>2020-07-20 07:22:45 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<importedID>AEF1AEC7-2F3C-1288-2FEE-E8EA6A7681CE</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="NOTICE_NO" id="82F72CCC-96F7-8FF2-BFB0-640D67C4C0EB">
+<sourceConnName>semiremote</sourceConnName>
+<sourceObjSchema>BR_NOTICES</sourceObjSchema>
+<sourceObjName>NOTICE_NO</sourceObjName>
+<createdBy>JHTA</createdBy>
+<createdTime>2020-07-20 07:22:45 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<importedID>B160FE35-F448-F44E-993C-6E58A8F0E5F0</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,6,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOTICE_TITLE" id="F97D40C8-B382-C811-E7AA-DD7364D9AFC4">
+<sourceConnName>semiremote</sourceConnName>
+<sourceObjSchema>BR_NOTICES</sourceObjSchema>
+<sourceObjName>NOTICE_TITLE</sourceObjName>
+<createdBy>JHTA</createdBy>
+<createdTime>2020-07-20 07:22:45 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<importedID>E3C76E5D-48D2-695C-2729-657B6506996B</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 BYTE</dataTypeSize>
+<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOTICE_CONTENT" id="9319FA5E-9DBD-E69B-9A16-47D6B86C1B97">
+<sourceConnName>semiremote</sourceConnName>
+<sourceObjSchema>BR_NOTICES</sourceObjSchema>
+<sourceObjName>NOTICE_CONTENT</sourceObjName>
+<createdBy>JHTA</createdBy>
+<createdTime>2020-07-20 07:22:45 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<importedID>010881CE-7A21-FF83-07CE-3A01887335E0</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 BYTE</dataTypeSize>
+<ownDataTypeParameters>4000 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOTICE_REG_DATE" id="E1BF843F-4329-757D-B2C3-FD142E3152CB">
+<sourceConnName>semiremote</sourceConnName>
+<sourceObjSchema>BR_NOTICES</sourceObjSchema>
+<sourceObjName>NOTICE_REG_DATE</sourceObjName>
+<createdBy>JHTA</createdBy>
+<createdTime>2020-07-20 07:22:45 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<importedID>BA471D5B-3476-4185-9764-54297A173D90</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<defaultValue>sysdate</defaultValue>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOTICE_DELETED" id="AED85F09-2125-79F2-C091-58CD56F390D7">
+<sourceConnName>semiremote</sourceConnName>
+<sourceObjSchema>BR_NOTICES</sourceObjSchema>
+<sourceObjName>NOTICE_DELETED</sourceObjName>
+<createdBy>JHTA</createdBy>
+<createdTime>2020-07-20 07:22:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[0-삭제됨]]></commentInRDBMS>
+<ownerDesignName>erd</ownerDesignName>
+<importedID>C41602BF-3815-4636-9241-A28EDAA6F223</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<defaultValue>&apos;1&apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOTICE_IMPORTANT" id="04725A08-AE04-13DF-BEB7-E15BCA0679A9">
+<sourceConnName>semiremote</sourceConnName>
+<sourceObjSchema>BR_NOTICES</sourceObjSchema>
+<sourceObjName>NOTICE_IMPORTANT</sourceObjName>
+<createdBy>JHTA</createdBy>
+<createdTime>2020-07-20 07:22:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[0-중요공지
+]]></commentInRDBMS>
+<ownerDesignName>erd</ownerDesignName>
+<importedID>AE1B5615-DB38-4A0D-F2B0-802CE1F52BE1</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<defaultValue>&apos;1&apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="97BB2312-3278-D4FE-CEB6-84603BC66558" name="BR_NOTICES_PK">
+<sourceConnName>semiremote</sourceConnName>
+<sourceObjSchema>BR</sourceObjSchema>
+<sourceObjName>SYS_C007215</sourceObjName>
+<createdBy>JHTA</createdBy>
+<createdTime>2020-07-20 07:22:45 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<importedID>60A9CDE9-EDF4-C1D4-5214-E2DA900B6592</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="82F72CCC-96F7-8FF2-BFB0-640D67C4C0EB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9F7F80AB-A4B1-CCB3-B7DF-A00EF35CBCBB" schemaObject="E472BB77-AAC3-288F-54BC-A41AB1B71B7A" name="SYS_C0011094">
+<sourceConnName>semiremote</sourceConnName>
+<sourceObjSchema>BR</sourceObjSchema>
+<sourceObjName>SYS_C0011094</sourceObjName>
+<createdBy>JHTA</createdBy>
+<createdTime>2020-07-20 07:22:45 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<importedID>5479958C-60F6-A74C-8CEE-CC3403B16BD1</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="82F72CCC-96F7-8FF2-BFB0-640D67C4C0EB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

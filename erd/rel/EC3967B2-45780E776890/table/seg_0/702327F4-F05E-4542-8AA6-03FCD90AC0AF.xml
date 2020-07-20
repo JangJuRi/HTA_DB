@@ -1,0 +1,93 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="702327F4-F05E-4542-8AA6-03FCD90AC0AF" schemaObject="E472BB77-AAC3-288F-54BC-A41AB1B71B7A" name="BR_USERS_POINTUSE">
+<sourceConnName>semiremote</sourceConnName>
+<sourceObjSchema>BR</sourceObjSchema>
+<sourceObjName>BR_USERS_POINTUSE</sourceObjName>
+<createdBy>JHTA</createdBy>
+<createdTime>2020-07-20 07:22:45 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<importedID>AB752FDC-ECD5-3754-3811-7D6CF5DA594A</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="USER_ID" id="A0529FA7-34FF-9AFA-2734-9440AE306D8A">
+<sourceConnName>semiremote</sourceConnName>
+<sourceObjSchema>BR_USERS_POINTUSE</sourceObjSchema>
+<sourceObjName>USER_ID</sourceObjName>
+<createdBy>JHTA</createdBy>
+<createdTime>2020-07-20 07:22:45 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<importedID>24D8ABB6-ADA1-D059-4751-99A7E0096E53</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="23DDDD58-9654-0E32-8A6C-7BB2D7FA97F5" referredColumn="DF598088-9835-E832-4913-BB89B3F45CEF"/>
+</associations>
+</Column>
+<Column name="USED_POINT" id="3658AF2E-7649-547D-A2A5-11E37186DA95">
+<sourceConnName>semiremote</sourceConnName>
+<sourceObjSchema>BR_USERS_POINTUSE</sourceObjSchema>
+<sourceObjName>USED_POINT</sourceObjName>
+<createdBy>JHTA</createdBy>
+<createdTime>2020-07-20 07:22:45 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<importedID>5546F2E5-3F25-3F0C-A22F-623A9C7B5E7C</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="USED_DATE" id="2CB223D3-BFB8-6505-B018-86E6D72EBAC9">
+<sourceConnName>semiremote</sourceConnName>
+<sourceObjSchema>BR_USERS_POINTUSE</sourceObjSchema>
+<sourceObjName>USED_DATE</sourceObjName>
+<createdBy>JHTA</createdBy>
+<createdTime>2020-07-20 07:22:45 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<importedID>0E06FE40-B822-F0F2-6219-AC9A8766EC4F</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<defaultValue>sysdate</defaultValue>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="USED_REASON" id="8F92B472-1FF4-B3A7-E155-9F2E31009FED">
+<sourceConnName>semiremote</sourceConnName>
+<sourceObjSchema>BR_USERS_POINTUSE</sourceObjSchema>
+<sourceObjName>USED_REASON</sourceObjName>
+<createdBy>JHTA</createdBy>
+<createdTime>2020-07-20 07:22:45 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<importedID>B192187C-2D78-6B69-1F6E-F01F872E71EF</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2000 BYTE</dataTypeSize>
+<ownDataTypeParameters>2000 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7C9B87CD-3206-74D1-C926-6BC706627266" name="SYS_C007258">
+<createdBy>JHTA</createdBy>
+<createdTime>2020-07-20 07:22:45 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A0529FA7-34FF-9AFA-2734-9440AE306D8A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

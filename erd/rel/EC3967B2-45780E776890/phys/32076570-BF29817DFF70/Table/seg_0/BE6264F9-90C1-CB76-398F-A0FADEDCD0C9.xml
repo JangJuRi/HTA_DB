@@ -1,0 +1,60 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="BR_PRODUCT_SIZE" directorySegmentName="seg_0" id="BE6264F9-90C1-CB76-398F-A0FADEDCD0C9">
+<createdBy>JHTA</createdBy>
+<createdTime>2020-07-20 07:22:45 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<schemaObject>E472BB77-AAC3-288F-54BC-A41AB1B71B7A</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>FCD92310-A67A-E5D1-36F9-3750B8BEE7F4</segment>
+<tableSpace>222C7E1F-81DA-1ACF-528D-8720267FB975</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="SIZE_COMMENT" id="611F2844-2717-7895-D216-3CFC441ECD19">
+<createdBy>JHTA</createdBy>
+<createdTime>2020-07-20 07:22:45 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PRODUCT_SIZE" id="666A258E-BA20-ECC7-5F10-213D5FE9CF89">
+<createdBy>JHTA</createdBy>
+<createdTime>2020-07-20 07:22:45 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SIZE_POINT" id="76AE0486-2C9B-1834-C653-42B97C3C693C">
+<createdBy>JHTA</createdBy>
+<createdTime>2020-07-20 07:22:45 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<defaultValue>100</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="SIZE_PRICE" id="C5108B3C-9F50-6080-E70C-1A4DA7F9D065">
+<createdBy>JHTA</createdBy>
+<createdTime>2020-07-20 07:22:45 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="SYS_C0011072" id="CF7F451F-0B5D-CD7F-0104-3CFBE4E7513F">
+<createdBy>JHTA</createdBy>
+<createdTime>2020-07-20 07:22:45 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<schemaObject>E472BB77-AAC3-288F-54BC-A41AB1B71B7A</schemaObject>
+<segment>8EA02D07-816D-E546-F657-75F5C2D13A4C</segment>
+<tableSpace>222C7E1F-81DA-1ACF-528D-8720267FB975</tableSpace>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="BR_PRODUCT_SIZE_PK" id="FBEF6E62-2E3B-AAC9-F83F-840BA432BC32">
+<createdBy>JHTA</createdBy>
+<createdTime>2020-07-20 07:22:45 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<segment>8EA02D07-816D-E546-F657-75F5C2D13A4C</segment>
+<tableSpace>222C7E1F-81DA-1ACF-528D-8720267FB975</tableSpace>
+<existingIndex>CF7F451F-0B5D-CD7F-0104-3CFBE4E7513F</existingIndex>
+<indexSegment>8EA02D07-816D-E546-F657-75F5C2D13A4C</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

@@ -1,0 +1,11 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<UserOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UserOraclev10g" name="BR" directorySegmentName="seg_0" id="AC86A075-D2A5-3242-9DBC-CDE00CA29062">
+<sourceConnName>semiremote</sourceConnName>
+<sourceObjName>BR</sourceObjName>
+<createdBy>JHTA</createdBy>
+<createdTime>2020-07-20 06:19:17 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<schemaObject>E472BB77-AAC3-288F-54BC-A41AB1B71B7A</schemaObject>
+<privileges>UNLIMITED TABLESPACE</privileges>
+<profile>DEFAULT</profile>
+</UserOraclev10g>

@@ -1,0 +1,106 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BE6264F9-90C1-CB76-398F-A0FADEDCD0C9" schemaObject="E472BB77-AAC3-288F-54BC-A41AB1B71B7A" name="BR_PRODUCT_SIZE">
+<sourceConnName>semiremote</sourceConnName>
+<sourceObjSchema>BR</sourceObjSchema>
+<sourceObjName>BR_PRODUCT_SIZE</sourceObjName>
+<createdBy>JHTA</createdBy>
+<createdTime>2020-07-20 07:22:45 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<importedID>6C33B79D-18DB-D44D-2C4B-EFF60D0389B3</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PRODUCT_SIZE" id="666A258E-BA20-ECC7-5F10-213D5FE9CF89">
+<sourceConnName>semiremote</sourceConnName>
+<sourceObjSchema>BR_PRODUCT_SIZE</sourceObjSchema>
+<sourceObjName>PRODUCT_SIZE</sourceObjName>
+<createdBy>JHTA</createdBy>
+<createdTime>2020-07-20 07:22:45 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<importedID>6C01CBBA-9BB2-CF45-255C-4D558AE22EFD</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SIZE_PRICE" id="C5108B3C-9F50-6080-E70C-1A4DA7F9D065">
+<sourceConnName>semiremote</sourceConnName>
+<sourceObjSchema>BR_PRODUCT_SIZE</sourceObjSchema>
+<sourceObjName>SIZE_PRICE</sourceObjName>
+<createdBy>JHTA</createdBy>
+<createdTime>2020-07-20 07:22:45 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<importedID>A88BBA0A-1DE0-5BA9-963F-94420CC5AB13</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SIZE_POINT" id="76AE0486-2C9B-1834-C653-42B97C3C693C">
+<sourceConnName>semiremote</sourceConnName>
+<sourceObjSchema>BR_PRODUCT_SIZE</sourceObjSchema>
+<sourceObjName>SIZE_POINT</sourceObjName>
+<createdBy>JHTA</createdBy>
+<createdTime>2020-07-20 07:22:45 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<importedID>77A30002-C84A-4DCF-DD6B-836394E88D1D</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<defaultValue>100</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SIZE_COMMENT" id="611F2844-2717-7895-D216-3CFC441ECD19">
+<sourceConnName>semiremote</sourceConnName>
+<sourceObjSchema>BR_PRODUCT_SIZE</sourceObjSchema>
+<sourceObjName>SIZE_COMMENT</sourceObjName>
+<createdBy>JHTA</createdBy>
+<createdTime>2020-07-20 07:22:45 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<importedID>6435F003-3117-854B-7CBC-865A6D83ED7E</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2000 BYTE</dataTypeSize>
+<ownDataTypeParameters>2000 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FBEF6E62-2E3B-AAC9-F83F-840BA432BC32" name="BR_PRODUCT_SIZE_PK">
+<sourceConnName>semiremote</sourceConnName>
+<sourceObjSchema>BR</sourceObjSchema>
+<sourceObjName>SYS_C007223</sourceObjName>
+<createdBy>JHTA</createdBy>
+<createdTime>2020-07-20 07:22:45 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<importedID>D4D1A2E0-487E-2189-5671-0FCC003F1986</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="666A258E-BA20-ECC7-5F10-213D5FE9CF89"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CF7F451F-0B5D-CD7F-0104-3CFBE4E7513F" schemaObject="E472BB77-AAC3-288F-54BC-A41AB1B71B7A" name="SYS_C0011072">
+<sourceConnName>semiremote</sourceConnName>
+<sourceObjSchema>BR</sourceObjSchema>
+<sourceObjName>SYS_C0011072</sourceObjName>
+<createdBy>JHTA</createdBy>
+<createdTime>2020-07-20 07:22:45 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<importedID>56F544D8-0979-CA8D-D92A-3B1B4A879756</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="666A258E-BA20-ECC7-5F10-213D5FE9CF89"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

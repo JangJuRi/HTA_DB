@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<UserOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UserOraclev10g" name="MDSYS" directorySegmentName="seg_0" id="MDSYS">
+<sourceConnName>semiremote</sourceConnName>
+<sourceObjName>MDSYS</sourceObjName>
+<createdBy>JHTA</createdBy>
+<createdTime>2020-07-20 06:19:07 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<schemaObject>6839308A-EB03-8FE7-0DD3-B2808DBEC061</schemaObject>
+<nullInstance>true</nullInstance>
+<storableNullInstance>true</storableNullInstance>
+<privileges>CREATE TYPE, DELETE ANY TABLE, SELECT ANY TABLE, CREATE OPERATOR, CREATE SEQUENCE, CREATE VIEW, ALTER ANY TABLE, UNLIMITED TABLESPACE, DROP ANY TRIGGER, CREATE TABLE, CREATE ANY TRIGGER, CREATE PROCEDURE, CREATE PUBLIC SYNONYM, CREATE LIBRARY, DROP PUBLIC SYNONYM, CREATE SESSION, UPDATE ANY TABLE, CREATE INDEXTYPE, FLASHBACK ANY TABLE</privileges>
+<profile>DEFAULT</profile>
+</UserOraclev10g>

@@ -1,0 +1,31 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableSpaceOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TableSpaceOraclev10g" name="USERS" directorySegmentName="seg_0" id="222C7E1F-81DA-1ACF-528D-8720267FB975">
+<sourceConnName>semiremote</sourceConnName>
+<sourceObjSchema>BR</sourceObjSchema>
+<sourceObjName>USERS</sourceObjName>
+<createdBy>JHTA</createdBy>
+<createdTime>2020-07-20 07:18:37 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<dsInitialExtent>65536</dsInitialExtent>
+<dsMaxExtents>2147483645</dsMaxExtents>
+<emUniformSize>0</emUniformSize>
+<extentManagement>LOCAL</extentManagement>
+<minExtLen>65536</minExtLen>
+<dsCompression>NOCOMPRESS</dsCompression>
+<encrypt>NO</encrypt>
+<fileType>SMALLFILE</fileType>
+<dataFiles>
+<DataFile class="oracle.dbtools.crest.model.design.storage.oracle.v10g.DataFileOraclev10g" name="USERS.DBF" id="8724D31B-255E-549E-7CFD-5C2C27113C22">
+<sourceConnName>semiremote</sourceConnName>
+<sourceObjName>C:\ORACLEXE\APP\ORACLE\ORADATA\XE\USERS.DBF</sourceObjName>
+<createdBy>JHTA</createdBy>
+<createdTime>2020-07-20 07:19:47 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<autoextend>ON</autoextend>
+<fileName>C:\ORACLEXE\APP\ORACLE\ORADATA\XE\USERS.DBF</fileName>
+<maxSize>1</maxSize>
+<nextBlockSize>10240</nextBlockSize>
+<size>102400</size>
+</DataFile>
+</dataFiles>
+</TableSpaceOraclev10g>

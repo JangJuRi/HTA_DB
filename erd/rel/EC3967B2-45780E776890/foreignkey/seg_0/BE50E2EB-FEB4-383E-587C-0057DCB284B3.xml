@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="BE50E2EB-FEB4-383E-587C-0057DCB284B3" containerWithKeyObject="076E54EC-44BF-FAF7-2BF5-4E050572C44C" localFKIndex="A2D47800-2C50-8FEF-BA0F-5860EC9F29BC" name="SYS_C007247">
+<sourceConnName>semiremote</sourceConnName>
+<sourceObjSchema>BR</sourceObjSchema>
+<sourceObjName>SYS_C007247</sourceObjName>
+<createdBy>JHTA</createdBy>
+<createdTime>2020-07-20 07:22:45 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<importedID>74AB007D-F884-B626-2BFD-720A9F9981F6</importedID>
+<referredTableLongName>BR.BR_NOTICES</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>5C8BFD42-205C-5D2E-ECD2-26736299F81A</referredTableID>
+<keyObject>97BB2312-3278-D4FE-CEB6-84603BC66558</keyObject>
+<referredKeyID>97BB2312-3278-D4FE-CEB6-84603BC66558</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>NOTICE_NO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

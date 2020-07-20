@@ -1,0 +1,192 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BF8872B2-DA67-9689-50CA-5E734BF5A4FC" schemaObject="E472BB77-AAC3-288F-54BC-A41AB1B71B7A" name="BR_USERS">
+<sourceConnName>semiremote</sourceConnName>
+<sourceObjSchema>BR</sourceObjSchema>
+<sourceObjName>BR_USERS</sourceObjName>
+<createdBy>JHTA</createdBy>
+<createdTime>2020-07-20 07:22:45 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<importedID>05F3D867-DDE7-DE68-8FE3-F5360C7DC557</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="USER_ID" id="DF598088-9835-E832-4913-BB89B3F45CEF">
+<sourceConnName>semiremote</sourceConnName>
+<sourceObjSchema>BR_USERS</sourceObjSchema>
+<sourceObjName>USER_ID</sourceObjName>
+<createdBy>JHTA</createdBy>
+<createdTime>2020-07-20 07:22:45 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<importedID>028E2A92-DA9B-C441-AEFA-79F73EBB33D8</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NAME" id="E678ADD1-DA89-5DD6-630D-F23364CEC8B8">
+<sourceConnName>semiremote</sourceConnName>
+<sourceObjSchema>BR_USERS</sourceObjSchema>
+<sourceObjName>NAME</sourceObjName>
+<createdBy>JHTA</createdBy>
+<createdTime>2020-07-20 07:22:45 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<importedID>3392F4BC-32E2-DB24-5C28-870BE0A1B753</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PASSWORD" id="F16040B5-EDC7-79A8-92AF-D8EF4563E843">
+<sourceConnName>semiremote</sourceConnName>
+<sourceObjSchema>BR_USERS</sourceObjSchema>
+<sourceObjName>PASSWORD</sourceObjName>
+<createdBy>JHTA</createdBy>
+<createdTime>2020-07-20 07:22:45 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<importedID>362F2EFF-2B27-AE74-18F4-0CC39F763407</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="POINT" id="8F67FE0E-08AA-6F13-009B-BBDBF11DC154">
+<sourceConnName>semiremote</sourceConnName>
+<sourceObjSchema>BR_USERS</sourceObjSchema>
+<sourceObjName>POINT</sourceObjName>
+<createdBy>JHTA</createdBy>
+<createdTime>2020-07-20 07:22:45 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<importedID>545C23D1-B8AB-CBC1-1B34-63EE15DA0254</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EMAIL" id="0690608D-FAC0-39FF-FA0E-1BAAC3882BA7">
+<sourceConnName>semiremote</sourceConnName>
+<sourceObjSchema>BR_USERS</sourceObjSchema>
+<sourceObjName>EMAIL</sourceObjName>
+<createdBy>JHTA</createdBy>
+<createdTime>2020-07-20 07:22:45 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<importedID>B4A7CEE3-9D7D-67D4-A6DD-F21643E956B9</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DELETED" id="F2B89ACF-8659-2317-8515-068157279ACF">
+<sourceConnName>semiremote</sourceConnName>
+<sourceObjSchema>BR_USERS</sourceObjSchema>
+<sourceObjName>DELETED</sourceObjName>
+<createdBy>JHTA</createdBy>
+<createdTime>2020-07-20 07:22:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[0-삭제됨]]></commentInRDBMS>
+<ownerDesignName>erd</ownerDesignName>
+<importedID>9885EE79-37FF-1A82-EBE2-9914105671D5</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<defaultValue>&apos;1&apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ADMIN" id="803585E4-D3BA-268B-4838-6FB2AE02C4EC">
+<sourceConnName>semiremote</sourceConnName>
+<sourceObjSchema>BR_USERS</sourceObjSchema>
+<sourceObjName>ADMIN</sourceObjName>
+<createdBy>JHTA</createdBy>
+<createdTime>2020-07-20 07:22:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[0-관리자
+]]></commentInRDBMS>
+<ownerDesignName>erd</ownerDesignName>
+<importedID>B2402077-9C20-A54F-C538-5B63BC7F4F12</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<defaultValue>&apos;1&apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="REG_DATE" id="BEFC8A14-BA90-E25A-F3EE-3180673B0131">
+<sourceConnName>semiremote</sourceConnName>
+<sourceObjSchema>BR_USERS</sourceObjSchema>
+<sourceObjName>REG_DATE</sourceObjName>
+<createdBy>JHTA</createdBy>
+<createdTime>2020-07-20 07:22:45 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<importedID>FB7AFC5A-4031-B4C6-30AA-366A2C971B16</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<defaultValue>sysdate</defaultValue>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PHONE" id="67F25435-A075-ABC3-28EB-039BBBEE9A12">
+<sourceConnName>semiremote</sourceConnName>
+<sourceObjSchema>BR_USERS</sourceObjSchema>
+<sourceObjName>PHONE</sourceObjName>
+<createdBy>JHTA</createdBy>
+<createdTime>2020-07-20 07:22:45 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<importedID>02A26F81-D5D7-B8E2-E2E0-C74A7F5E384E</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D8D143AD-8C66-D8AF-CA6F-1B774339A4AC" name="BR_USERS_PK">
+<sourceConnName>semiremote</sourceConnName>
+<sourceObjSchema>BR</sourceObjSchema>
+<sourceObjName>SYS_C007244</sourceObjName>
+<createdBy>JHTA</createdBy>
+<createdTime>2020-07-20 07:22:45 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<importedID>8997C23C-19F5-21B0-C2B8-E125F8CF67DB</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DF598088-9835-E832-4913-BB89B3F45CEF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B20CDFCE-223B-853F-1A09-BF8D883B212F" schemaObject="E472BB77-AAC3-288F-54BC-A41AB1B71B7A" name="SYS_C0011056">
+<sourceConnName>semiremote</sourceConnName>
+<sourceObjSchema>BR</sourceObjSchema>
+<sourceObjName>SYS_C0011056</sourceObjName>
+<createdBy>JHTA</createdBy>
+<createdTime>2020-07-20 07:22:45 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<importedID>4BA70530-B4AC-2284-773A-695798F440FE</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DF598088-9835-E832-4913-BB89B3F45CEF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

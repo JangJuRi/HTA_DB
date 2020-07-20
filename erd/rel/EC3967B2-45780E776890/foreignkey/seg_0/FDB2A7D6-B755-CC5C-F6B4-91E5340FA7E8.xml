@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="FDB2A7D6-B755-CC5C-F6B4-91E5340FA7E8" containerWithKeyObject="E7D2097A-9765-0914-5B96-9EA86235013D" localFKIndex="881944CB-A6E0-2ED0-E236-E83530D8091D" name="SYS_C007246">
+<sourceConnName>semiremote</sourceConnName>
+<sourceObjSchema>BR</sourceObjSchema>
+<sourceObjName>SYS_C007246</sourceObjName>
+<createdBy>JHTA</createdBy>
+<createdTime>2020-07-20 07:22:45 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<importedID>D677EA36-8CEF-E27C-24BF-2EAB38830B59</importedID>
+<referredTableLongName>BR.BR_EVENTS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>4F71B687-F5BE-DD5C-45D3-6CB7BC52E9F7</referredTableID>
+<keyObject>51518AE0-3FC2-15E0-3FC4-C3B8E9EBE557</keyObject>
+<referredKeyID>51518AE0-3FC2-15E0-3FC4-C3B8E9EBE557</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>EVENT_NO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,157 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4F71B687-F5BE-DD5C-45D3-6CB7BC52E9F7" schemaObject="E472BB77-AAC3-288F-54BC-A41AB1B71B7A" name="BR_EVENTS">
+<sourceConnName>semiremote</sourceConnName>
+<sourceObjSchema>BR</sourceObjSchema>
+<sourceObjName>BR_EVENTS</sourceObjName>
+<createdBy>JHTA</createdBy>
+<createdTime>2020-07-20 07:22:45 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<importedID>6F5B1EB1-CA5A-E7E9-CB66-8FB3AC6D1F5F</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="EVENT_NO" id="7AA36E92-E934-447B-0F56-12CDD35933C7">
+<sourceConnName>semiremote</sourceConnName>
+<sourceObjSchema>BR_EVENTS</sourceObjSchema>
+<sourceObjName>EVENT_NO</sourceObjName>
+<createdBy>JHTA</createdBy>
+<createdTime>2020-07-20 07:22:45 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<importedID>1F659E3F-6F48-CCF1-37FD-2AD675BF52FA</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,6,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TITLE" id="5A4CD146-4F85-DC87-E104-8D0BF7E8F568">
+<sourceConnName>semiremote</sourceConnName>
+<sourceObjSchema>BR_EVENTS</sourceObjSchema>
+<sourceObjName>TITLE</sourceObjName>
+<createdBy>JHTA</createdBy>
+<createdTime>2020-07-20 07:22:45 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<importedID>C90CA084-9853-A31C-D5BA-4E4481B1058D</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CONTENT" id="4EAA5472-2CD9-A91A-E742-2A743DB2025B">
+<sourceConnName>semiremote</sourceConnName>
+<sourceObjSchema>BR_EVENTS</sourceObjSchema>
+<sourceObjName>CONTENT</sourceObjName>
+<createdBy>JHTA</createdBy>
+<createdTime>2020-07-20 07:22:45 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<importedID>7A0F20AD-8487-E0D4-528E-CF567C9FFFE9</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 BYTE</dataTypeSize>
+<ownDataTypeParameters>4000 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="START_DATE" id="05D809C1-C7FE-FC98-6086-698AEEEE51AE">
+<sourceConnName>semiremote</sourceConnName>
+<sourceObjSchema>BR_EVENTS</sourceObjSchema>
+<sourceObjName>START_DATE</sourceObjName>
+<createdBy>JHTA</createdBy>
+<createdTime>2020-07-20 07:22:45 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<importedID>4DD77657-7866-6B63-6313-C16037C33B14</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="END_DATE" id="9E52F712-518B-F086-F658-A9F11FD866C1">
+<sourceConnName>semiremote</sourceConnName>
+<sourceObjSchema>BR_EVENTS</sourceObjSchema>
+<sourceObjName>END_DATE</sourceObjName>
+<createdBy>JHTA</createdBy>
+<createdTime>2020-07-20 07:22:45 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<importedID>D7666D05-4E54-93F2-B43A-D25217C01667</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ENDED" id="161C982F-E052-8CAC-6544-B616998297A1">
+<sourceConnName>semiremote</sourceConnName>
+<sourceObjSchema>BR_EVENTS</sourceObjSchema>
+<sourceObjName>ENDED</sourceObjName>
+<createdBy>JHTA</createdBy>
+<createdTime>2020-07-20 07:22:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[0-종료됨 /1-진행중]]></commentInRDBMS>
+<ownerDesignName>erd</ownerDesignName>
+<importedID>39743FBA-DF51-4C9F-0B9F-DEF7E16FE7B9</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<defaultValue>&apos;1&apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ONLYBANNER" id="45EE2BD4-6444-403A-11F3-571E3E6222D3">
+<sourceConnName>semiremote</sourceConnName>
+<sourceObjSchema>BR_EVENTS</sourceObjSchema>
+<sourceObjName>ONLYBANNER</sourceObjName>
+<createdBy>JHTA</createdBy>
+<createdTime>2020-07-20 07:22:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[0-배너전용]]></commentInRDBMS>
+<ownerDesignName>erd</ownerDesignName>
+<importedID>E1C423CC-3F6A-B67C-BBB7-E89AEDFE628B</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="51518AE0-3FC2-15E0-3FC4-C3B8E9EBE557" name="BR_EVENTS_PK">
+<sourceConnName>semiremote</sourceConnName>
+<sourceObjSchema>BR</sourceObjSchema>
+<sourceObjName>SYS_C007208</sourceObjName>
+<createdBy>JHTA</createdBy>
+<createdTime>2020-07-20 07:22:45 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<importedID>7F2C43CE-90AE-A3AD-4ABD-29668B86D5E8</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7AA36E92-E934-447B-0F56-12CDD35933C7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F4154DCF-A241-4F88-3EC4-479AE9D180DA" schemaObject="E472BB77-AAC3-288F-54BC-A41AB1B71B7A" name="SYS_C0011101">
+<sourceConnName>semiremote</sourceConnName>
+<sourceObjSchema>BR</sourceObjSchema>
+<sourceObjName>SYS_C0011101</sourceObjName>
+<createdBy>JHTA</createdBy>
+<createdTime>2020-07-20 07:22:45 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<importedID>88A3418D-F869-68FF-0EFD-AC9A2410EDB0</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7AA36E92-E934-447B-0F56-12CDD35933C7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

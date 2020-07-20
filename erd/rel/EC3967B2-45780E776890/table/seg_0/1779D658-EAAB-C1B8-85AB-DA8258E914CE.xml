@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1779D658-EAAB-C1B8-85AB-DA8258E914CE" schemaObject="E472BB77-AAC3-288F-54BC-A41AB1B71B7A" name="BR_PRODUCT_IMAGE_PATH">
+<sourceConnName>semiremote</sourceConnName>
+<sourceObjSchema>BR</sourceObjSchema>
+<sourceObjName>BR_PRODUCT_IMAGE_PATH</sourceObjName>
+<createdBy>JHTA</createdBy>
+<createdTime>2020-07-20 07:22:45 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<importedID>4D069C94-AE8C-8B89-B9A8-C482DD0A50AC</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PRODUCT_NO" id="82712283-093B-8C61-9918-075F274E9ED2">
+<sourceConnName>semiremote</sourceConnName>
+<sourceObjSchema>BR_PRODUCT_IMAGE_PATH</sourceObjSchema>
+<sourceObjName>PRODUCT_NO</sourceObjName>
+<createdBy>JHTA</createdBy>
+<createdTime>2020-07-20 07:22:45 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<importedID>55CF7EBE-3CC3-F8E3-1450-56B5C3A3CCAC</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,6,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9FF91317-3AEA-AE81-036E-60039848BB1C" referredColumn="FB19B5AC-006C-7BB2-7846-D479013278CE"/>
+</associations>
+</Column>
+<Column name="IMAGE_PATH" id="23FDD72B-DDE8-7828-C95B-5F9804565397">
+<sourceConnName>semiremote</sourceConnName>
+<sourceObjSchema>BR_PRODUCT_IMAGE_PATH</sourceObjSchema>
+<sourceObjName>IMAGE_PATH</sourceObjName>
+<createdBy>JHTA</createdBy>
+<createdTime>2020-07-20 07:22:45 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<importedID>A2A5E742-58DF-FA23-CCF9-0A82D1A5AB22</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1000 BYTE</dataTypeSize>
+<ownDataTypeParameters>1000 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5549DE7A-B9B8-6E37-3EB3-4D2B497CF08A" name="SYS_C007251">
+<createdBy>JHTA</createdBy>
+<createdTime>2020-07-20 07:22:45 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="82712283-093B-8C61-9918-075F274E9ED2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
